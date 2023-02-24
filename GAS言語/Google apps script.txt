@@ -1,0 +1,12 @@
+function doGet(e) {
+  const url = "";
+  const ss = SpreadsheetApp.openByUrl(url);
+  const sheet = ss.getSheets()[0];
+  const data = {
+    "timestamp": new Date(),
+    "data1": e.parameter.data1,
+    "data2": e.parameter.data2
+  };
+  sheet.appendRow(Object.values(data));
+  return ContentService.createTextOutput('sccess');
+}
