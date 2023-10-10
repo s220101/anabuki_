@@ -1,4 +1,5 @@
 #include <WiFi.h>
+/*バージョン2.1.0*/
 #include <ESP_Line_Notify.h>
 
 // WiFi 設定
